@@ -5,11 +5,7 @@ from traceback import print_exc
 
 
 class Crud:
-    def __init__(self, connection_string=f'sqlite:///log_db.sqlite3',
-                 encoding='utf-8',
-                 pool_size=10,
-                 max_overflow=20,
-                 pool_recycle=3600):
+    def __init__(self, connection_string='sqlite:///log_db.sqlite3', encoding='utf-8', pool_size=10, max_overflow=20, pool_recycle=3600):
 
         self.connection_string = connection_string
         self.encoding = encoding
